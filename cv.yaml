@@ -31,9 +31,21 @@ life_education:
     dates: 1936--1938
 
 personal_projects:
-  -name: Cryptanalysis of the Enigma
-  -name: Turing's proof
-  -name: Turing machine
-  -name: Turing test
-  -name: Unorganised machine
-  -name: LU decomposition
+  - name: Cryptanalysis of the Enigma
+    details:
+      - Some text it don't want to write right now.
+  - name: Turing's proof
+    details:
+      - Some text it don't want to write right now.
+  - name: Turing machine
+    details:
+      - Some text it don't want to write right now.
+  - name: Turing test
+    details:
+      - Some text it don't want to write right now.
+  - name: Unorganised machine
+    details:
+      - Some text it don't want to write right now.
+  - name: LU decomposition
+    details:
+      - Some text it don't want to write right now.

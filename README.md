@@ -3,13 +3,13 @@ YAML to PDF Resume Generator
 This repo contains the source I use to automatically generate my curriculum vitae and resume as PDF from YAML input.
 
 ## Requirements:
-* Python (I tested it on Python 3.6.4),
+* Python (>=3.6),
 * MikTeX or any other LaTeX processor (LaTeX packages are assumed to be there or to be installed on-the-fly by MikTeX during compiling for the first time),
 * Jinja2.
 
 ## Usage:
 
-Edit the file `cv.yaml` with your information (read the guidelines in the header), then run this command in the console: `python generate_cv.py && cd result && pdflatex cv.tex && pdflatex cv.tex`. We compile the TeX file twice so that the page numbering would be correct (TeX doesn't know how many pages you compile during the first run).
+Edit the file `cv.yaml` with your information (read the guidelines in the header), then run this command in the console: `make LANGUAGE=$desired_language TYPE=$desired_type`. You will have to replace `$desired_language` with _english_ or _spanish_ and `$desired_type` with _academic_, _professional_ or _unsl_. This will generate a cv suited for the `$desired_type` you indicated and the `$desired_language` you chose.
 
 ## License:
 

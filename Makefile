@@ -6,30 +6,29 @@
 
 TEMPLATES=$(shell find templates -type f)
 
-RESULT_DIR=result
-TEX=$(RESULT_DIR)/cv.tex
-PDF=$(RESULT_DIR)/cv.pdf
-YAML_FILES = cv.yaml
+LANGUAGE=english
+TYPE=academic
+RESULT_DIR=result/$(LANGUAGE)
+TEX=$(RESULT_DIR)/$(TYPE).tex
+PDF=$(RESULT_DIR)/$(TYPE).pdf
+YAML_FILE = cv.yaml
 
-.PHONY: all public viewpdf clean
+.PHONY: all viewpdf clean
 
 all: $(PDF)
 
 $(RESULT_DIR):
 	mkdir -p $(RESULT_DIR)
 
-public: $(RESULT_DIR) $(TEMPLATES) $(YAML_FILES) generate_cv.py
-	python generate_cv.py cv.yaml
-
-$(TEX): $(TEMPLATES) $(YAML_FILES) generate_cv.py
-	python generate_cv.py $(YAML_FILES)
+$(TEX): $(RESULT_DIR) $(TEMPLATES) $(YAML_FILE) generate_cv.py
+	python generate_cv.py $(YAML_FILE) --document_type $(TYPE) --language $(LANGUAGE)
 
 $(PDF): $(TEX)
-	latexmk -pdf -cd- -jobname=$(RESULT_DIR)/cv $(RESULT_DIR)/cv
-	latexmk -c -cd $(RESULT_DIR)/cv
+	latexmk -pdf -cd- -jobname=$(RESULT_DIR)/$(TYPE) $(RESULT_DIR)/$(TYPE)
+	latexmk -c -cd $(RESULT_DIR)/$(TYPE)
 
 viewpdf: $(PDF)
-	gnome-open $(PDF)
+	evince $(PDF)
 
 clean:
-	rm -rf $(RESULT_DIR)/cv*
+	rm -rf $(RESULT_DIR)/$(TYPE)*
