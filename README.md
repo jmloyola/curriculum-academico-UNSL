@@ -9,7 +9,13 @@ This repo contains the source I use to automatically generate my curriculum vita
 
 ## Usage:
 
-Edit the file `cv.yaml` with your information (read the guidelines in the header), then run this command in the console: `make LANGUAGE=$desired_language TYPE=$desired_type`. You will have to replace `$desired_language` with _english_ or _spanish_ and `$desired_type` with _academic_, _professional_ or _unsl_. This will generate a cv suited for the `$desired_type` you indicated and the `$desired_language` you chose.
+Edit the file `cv.yaml` with your information (read the guidelines in the header), then run this command in the console: `make LANGUAGE=$desired_language TYPE=$desired_type`.
+
+You will have to replace:
+- `$desired_language` with _english_ or _spanish_, and
+- `$desired_type` with _academic_, _professional_ or _unsl_.
+
+This will generate a cv suited for the `$desired_type` and `$desired_language` you indicated.
 
 ## License:
 
