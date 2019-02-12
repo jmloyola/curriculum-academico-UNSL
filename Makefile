@@ -6,9 +6,10 @@
 
 TEMPLATES=$(shell find templates -type f)
 
-LANGUAGE=english
-TYPE=academic
-RESULT_DIR=result/$(LANGUAGE)
+LANGUAGE=spanish
+TYPE=unsl
+PARENT_RESULT_DIR=result
+RESULT_DIR=$(PARENT_RESULT_DIR)/$(LANGUAGE)
 TEX=$(RESULT_DIR)/$(TYPE).tex
 PDF=$(RESULT_DIR)/$(TYPE).pdf
 YAML_FILE = cv.yaml
@@ -31,4 +32,4 @@ viewpdf: $(PDF)
 	evince $(PDF)
 
 clean:
-	rm -rf $(RESULT_DIR)/$(TYPE)*
+	rm -rf $(PARENT_RESULT_DIR)/*
