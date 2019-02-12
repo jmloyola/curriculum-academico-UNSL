@@ -4,27 +4,89 @@
 
 %\newgeometry{left=0mm,right=135mm}
 \fboxsep0pt
-\hspace{-20mm}\colorbox{maincolor}{\begin{minipage}[t][8mm][c]{75mm}
-\hspace{20mm}\bfseries \color{white}  ~{{ name }}~
+\hspace{-20mm}\colorbox{maincolor}{\begin{minipage}[t][8mm][c]{150mm}
+\hspace{12mm}\bfseries \color{white}  ~{{ name }}~
 \end{minipage}}
 \vspace{6mm}
 %to restore old margins, use
 %\restoregeometry
 
-\begin{minipage}{\textwidth}
+%%\begin{minipage}{\textwidth}
 
-~{ if name == "LIFE / EDUCATION" }~
-  ~{ for experience in contents }~
-    \begin{tabular}{ @{} p{32mm} l @{} }
-    {\small ~{{ experience.dates }}~} & {\small ~{{ experience.experience }}~}~{- if experience.location -}~ \small \hspace{1mm}- ~{{ experience.location }}~~{- endif -}~\\
-    ~{- if experience.degree -}~
-      & \small ~{{ experience.degree }}~.\\
+~{ if name == "A) ANTECEDENTES SOBRE LA FORMACIÓN" }~
+  ~{ for subseccion in contents }~
+    ~{ if subseccion.titulos_universitarios }~
+      \textbf{1. TÍTULOS UNIVERSITARIOS:}
+      \begin{itemize}
+      ~{ for item in subseccion.titulos_universitarios }~
+        % The symbol '-' eats leading / trailing whitespace, for example used with the if statement it does not generate new lines.
+        \item ~{{ item.titulo }}~, ~{{ item.universidad }}~.
+              ~{- if item.egreso }~ Año de egreso: ~{{ item.egreso }}~. ~{ endif }~
+              ~{- if item.egreso_estimado }~ Año estimado de finalización: ~{{ item.egreso_estimado }}~. ~{ endif }~
+              ~{- if item.promedio }~ Promedio con y sin aplazos: ~{{ item.promedio }}~. ~{ endif }~
+              ~{- if item.resolución_egreso }~ Resolución de expedición de título: ~{{ item.resolución_egreso }}~. ~{ endif }~
+              ~{- if item.resolución_admision }~ Resolución de admisión al doctorado y aprobación de plan: ~{{ item.resolución_admision }}~. ~{ endif }~
+      ~{ endfor }~
+      \end{itemize}
+      \vspace{1mm}
     ~{- endif -}~
-    ~{- if experience.grade -}~
-      & \small \color{maingrey} Final grade: ~{{ experience.grade }}~\\
+
+    ~{ if subseccion.cursos_post_grado }~
+      \textbf{2. CURSOS CATEGORIZADOS COMO DE POST GRADO:}
+      \begin{itemize}
+      ~{ for item in subseccion.cursos_post_grado }~
+        % The symbol '-' eats leading / trailing whitespace, for example used with the if statement it does not generate new lines.
+        \item ``~{{ item.nombre }}~'', ~{{ item.institucion }}~, ~{{ item.creditos }}~, ~{{ item.año }}~.
+              ~{- if item.resolucion_protocolizacion }~ Resolución de protocolización: ~{{ item.resolucion_protocolizacion }}~. ~{ endif }~
+              ~{- if item.resolucion_aprobacion }~ Resolución de aprobación: ~{{ item.resolucion_aprobacion }}~. ~{ else }~ Resolución de aprobación en trámite. ~{ endif }~
+              ~{- if item.resolución_rec_prot_aprob }~ Resolución de rectificación de protocolización y aprobación ~{{ item.resolución_rec_prot_aprob }}~. ~{ endif }~
+        \vspace{1mm}
+      ~{ endfor }~
+      \end{itemize}
+      \vspace{1mm}
     ~{- endif -}~
-    \end{tabular}
-    \vspace{1mm}
+
+    ~{ if subseccion.otros_cursos }~
+      \textbf{3. OTROS CURSOS APROBADOS (SEMINARIOS, TALLERES, ETC.):}
+      \begin{itemize}
+      ~{ for item in subseccion.otros_cursos }~
+        ~{- if item.tipo == "curso" }~
+          % The symbol '-' eats leading / trailing whitespace, for example used with the if statement it does not generate new lines.
+          \item ~{ if item.tipo_certificacion == "aprobacion" }~ Aprobación del curso ~{ elif item.tipo_certificacion == "asistencia" }~ Asitencia al curso ~{ endif }~
+                ``~{{ item.nombre }}~'', ~{{ item.institucion }}~,
+                ~{- if item.creditos }~ ~{{ item.creditos }}~, ~{ endif }~
+                ~{{ item.año }}~.
+                ~{- if item.resolucion_protocolizacion }~ Resolución de protocolización: ~{{ item.resolucion_protocolizacion }}~. ~{ endif }~
+                ~{- if item.resolucion_aprobacion }~ Resolución de aprobación: ~{{ item.resolucion_aprobacion }}~. ~{ else }~ Resolución de aprobación en trámite. ~{ endif }~
+          \vspace{1mm}
+        ~{ endif }~
+
+        ~{- if item.tipo == "seminario" }~
+          \item Asitencia al seminario ``~{{ item.nombre }}~'', ~{{ item.institucion }}~, ~{{ item.año }}~.
+          \vspace{1mm}
+        ~{ endif }~
+
+        ~{- if item.tipo == "jornada" }~
+          \item Asitencia a la jornada ``~{{ item.nombre }}~'', ~{{ item.institucion }}~, ~{{ item.año }}~.
+          \vspace{1mm}
+        ~{ endif }~
+
+        ~{- if item.tipo == "charla" }~
+          \item Asitencia a la charla de divulgación científica ``~{{ item.nombre }}~'', ~{{ item.institucion }}~, ~{{ item.año }}~.
+                ~{- if item.resolucion_asistencia }~ Resolución de asistencia: ~{{ item.resolucion_asistencia }}~. ~{ endif }~
+          \vspace{1mm}
+        ~{ endif }~
+
+        ~{- if item.tipo == "escuela" }~
+          \item Asitencia a la escuela ``~{{ item.nombre }}~'', ~{{ item.institucion }}~, ~{{ item.año }}~.
+          \vspace{1mm}
+        ~{ endif }~
+
+      ~{ endfor }~
+      \end{itemize}
+      \vspace{1mm}
+    ~{- endif -}~
+
   ~{ endfor }~
   %additional space
   \vspace{2mm}
@@ -111,4 +173,5 @@
   ~{{ contents }}~
   \bigskip
 ~{ endif }~
-\end{minipage}
+
+%\end{minipage}
