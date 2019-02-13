@@ -13,7 +13,17 @@
 
 %%\begin{minipage}{\textwidth}
 
-~{ if name == "A) ANTECEDENTES SOBRE LA FORMACIÓN" }~
+~{ if name == "DATOS PERSONALES" }~
+  ~{ for dato in contents }~
+    \begin{tabular}{ @{} p{38mm} p{90mm} l @{}}
+      {\small ~{{ dato.name }}~}: & {\small ~{{ dato.value }}~}
+    \end{tabular}
+    \vspace{1mm}
+  ~{ endfor }~
+  %additional space
+  \vspace{2mm}
+
+~{ elif name == "A) ANTECEDENTES SOBRE LA FORMACIÓN" }~
   ~{ for subseccion in contents }~
     ~{ if subseccion.titulos_universitarios }~
       \textbf{1. TÍTULOS UNIVERSITARIOS:}
