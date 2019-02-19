@@ -1,11 +1,12 @@
 \medskip
 
-\fontfamily{lmss}\selectfont
+\fontfamily{lmss}
+\selectfont
 
 %\newgeometry{left=0mm,right=135mm}
 \fboxsep0pt
-\hspace{-20mm}\colorbox{maincolor}{\begin{minipage}[t][8mm][c]{165mm}
-\hspace{12mm}\bfseries \color{white}  ~{{ name }}~
+\hspace{-20mm}\colorbox{maincolor}{\begin{minipage}[t][8mm][c]{180mm}
+\hspace{8mm}\bfseries \color{white}  ~{{ name }}~
 \end{minipage}}
 \vspace{6mm}
 %to restore old margins, use
@@ -123,6 +124,83 @@
         \item ~{{ item.cargo }}~, dedicación ~{{ item.dedicacion }}~, carácter ~{{ item.caracter }}~, en ~{{ item.institucion }}~, ~{{ item.fecha }}~. Materia: ~{{ item.materia }}~.
               ~{- if item.resolucion_llamado }~ Resolución de llamado a concurso: ~{{ item.resolucion_llamado }}~. ~{ endif }~
               ~{- if item.resolucion_orden_merito }~ Resolución de orden de mérito: ~{{ item.resolucion_orden_merito }}~. ~{ endif }~
+      ~{ endfor }~
+      \end{itemize}
+      \vspace{1mm}
+    ~{- endif -}~
+
+  ~{ endfor }~
+  %additional space
+  \vspace{2mm}
+
+
+~{ elif name == "C) ANTECEDENTES SOBRE ACTIVIDAD Y PRODUCCIÓN CIENTÍFICA O TECNOLÓGICA" }~
+  ~{ for subseccion in contents }~
+    ~{ if subseccion.investigacion }~
+      \textbf{1. DIRECCIÓN, CO-DIRECCIÓN Y/O PARTICIPACIÓN EN INVESTIGACIÓN:}
+      \begin{itemize}
+      ~{ for item in subseccion.investigacion }~
+        % The symbol '-' eats leading / trailing whitespace, for example used with the if statement it does not generate new lines.
+        \item ~{{ item.cargo }}~ del proyecto de investigación ``~{{ item.proyecto }}~'', ~{{ item.institucion }}~,
+              ~{- if item.codigo }~ ~{{ item.codigo }}~, ~{ endif }~
+              ~{{ item.fecha }}~.
+              ~{- if item.resolucion }~ Resolución: ~{{ item.resolucion }}~. ~{ endif }~
+      ~{ endfor }~
+      \end{itemize}
+      \vspace{1mm}
+    ~{- endif -}~
+
+    ~{ if subseccion.publicaciones }~
+      \textbf{2. PUBLICACIONES:}
+      \begin{itemize}
+      ~{ for item in subseccion.publicaciones }~
+        % The symbol '-' eats leading / trailing whitespace, for example used with the if statement it does not generate new lines.
+        ~{ if item.tipo == "articulo" }~
+          \item ~{{ item.autores }}~, ``~{{ item.titulo }}~'', en ~{{ item.revista }}~.
+                ~{- if item.ISBN }~ ISBN: ~{{ item.ISBN }}~. ~{ endif }~
+                ~{- if item.DOI }~ DOI: ~{{ item.DOI }}~. ~{ endif }~
+
+        ~{ elif item.tipo == "preprints" }~
+
+        ~{ elif item.tipo == "conference_proceeding" }~
+
+        ~{ elif item.tipo == "workshop" }~
+
+        ~{ elif item.tipo == "magazine" }~
+
+        ~{ elif item.tipo == "poster" }~
+        ~{- endif -}~
+      ~{ endfor }~
+      \end{itemize}
+      \vspace{1mm}
+    ~{- endif -}~
+
+    ~{ if subseccion.trabajos_tesis }~
+      \textbf{3. TRABAJOS DE TESIS:}
+      \begin{itemize}
+      ~{ for item in subseccion.trabajos_tesis }~
+        % The symbol '-' eats leading / trailing whitespace, for example used with the if statement it does not generate new lines.
+        \item ~{{ item.tipo }}~ ``~{{ item.titulo }}~'', ~{{ item.institucion }}~, ~{{ item.fecha }}~.
+              ~{- if item.resolucion }~ Resolución: ~{{ item.resolucion }}~. ~{ endif }~
+      ~{ endfor }~
+      \end{itemize}
+      \vspace{1mm}
+    ~{- endif -}~
+
+    ~{ if subseccion.eventos_cientificos }~
+      \textbf{4. PARTICIPACIÓN ACTIVA EN CONGRESOS, SEMINARIOS, JORNADAS O ACONTECIMIENTOS CIENTÍFICOS SIMILARES:}
+      \begin{itemize}
+      ~{ for item in subseccion.eventos_cientificos }~
+        % The symbol '-' eats leading / trailing whitespace, for example used with the if statement it does not generate new lines.
+        \item ~{ if item.tipo_participacion == "asistencia" }~ Asistencia a ~{{ item.tipo_evento }}~  
+              ~{ elif item.tipo_participacion == "debate" }~ Participación en los debates en
+              ~{ elif item.tipo_participacion == "participacion" }~ Participación en ~{{ item.tipo_evento }}~ ~{ endif -}~
+              ``~{{ item.nombre_evento }}~'', ~{{ item.institucion }}~, ~{{ item.lugar }}~, ~{{ item.fecha }}~.
+              ~{- if item.tipo_trabajo -}~
+                ~{ if item.tipo_trabajo == "articulo" }~ Autor del artículo ``~{{ item.titulo_trabajo }}~'', ~{{ item.autores }}~.
+                ~{ elif item.tipo_trabajo == "presentacion_oral" }~ Defensa oral del trabajo ``~{{ item.titulo_trabajo }}~''.
+                ~{ elif item.tipo_trabajo == "poster" }~ Autor del poster ``~{{ item.titulo_trabajo }}~''. ~{- endif -}~
+              ~{- endif -}~
       ~{ endfor }~
       \end{itemize}
       \vspace{1mm}
