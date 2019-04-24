@@ -1,4 +1,4 @@
-YAML a PDF - Generador de Currículum Académico para la Universidad Nacional de San Luis
+Generador de Currículum Académico para la Universidad Nacional de San Luis
 ============================
 Este repositorio contiene el código fuente que yo uso para generar automáticamente mi currículum académico para la Universidad Nacional de San Luis (Argentina). El archivo final en formato `pdf` se genera desde un archivo en formato `yaml` con todos los datos necesarios.
 
@@ -11,9 +11,7 @@ Los campos válidos para completar el currículum académico son los que se encu
 
 ## Cómo usarlo
 
-Edita el archivo `cv.yaml` con tu información (lee las pautas en el encabezado), luego ejecuta el comando `make` en la consola.
-
-Esto generará un currículum académico en la carpeta `resultados`.
+Edita el archivo `cv.yaml` con tu información (lee las pautas en el encabezado), luego ejecuta el comando `make` en la consola. Esto generará un currículum académico en la carpeta `resultado`.
 
 ## Licencia
 
@@ -30,4 +28,4 @@ Todo el contenido de este repositorio es abierto, esto quiere decir que cualquie
 - Correcciones ortográficas
 - Correcciones en el código Python, incluidas mejoras de estilo
 
-La forma de contribuir es vía Github, es decir los cambios deberán ser hechos en forma de pull requests y los problemas / bugs deberán reportarse como Issues.
+La forma de contribuir es vía GitHub, es decir los cambios deberán ser hechos en forma de pull requests y los problemas / bugs deberán reportarse como Issues.
