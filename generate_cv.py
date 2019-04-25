@@ -20,7 +20,7 @@ def generate(yaml_contents):
     body = ""
     section_template = 'cv-section.tmpl.tex'
     # generate sections 1 by 1
-    for section in yaml_contents['order']:
+    for section in yaml_contents['secciones_a_incluir']:
         contents = yaml_contents[section[0]]
         name = section[1].title()
         body += env.get_template(section_template).render(
@@ -31,8 +31,6 @@ def generate(yaml_contents):
     result = open('resultado/cv.tex', 'w')
     document_template = 'cv.tmpl.tex'
     result.write(env.get_template(document_template).render(
-        name = yaml_contents['name'].upper(),
-        email = yaml_contents['email'],
         body = body,
         today = date.today().strftime("%B %d, %Y")
     ))
