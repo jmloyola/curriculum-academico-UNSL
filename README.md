@@ -2,7 +2,7 @@ Generador de Currículum Académico para la Universidad Nacional de San Luis
 ============================
 Este repositorio contiene el código fuente que yo uso para generar automáticamente mi currículum académico para la Universidad Nacional de San Luis (Argentina). El archivo final en formato `pdf` se genera desde un archivo en formato `yaml` con todos los datos necesarios.
 
-Los campos válidos para completar el currículum académico son los que se encuentran en la ordenanza del consejo superior [OCS-1-15/97](http://digesto.unsl.edu.ar/docs/200606/20060626091521_18824.pdf).
+Los campos válidos para completar el currículum académico son los que se encuentran en el artículo 35 de la ordenanza del consejo superior [OCS-1-15/97](http://digesto.unsl.edu.ar/docs/200606/20060626091521_18824.pdf).
 
 ## Requerimientos
 * Python (>=3.6),
