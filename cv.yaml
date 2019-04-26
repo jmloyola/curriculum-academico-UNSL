@@ -6,6 +6,9 @@
 # - Si _ es parte de la url, coloque la url completa entre los corchetes de \url{} en TeX porque
 #   de lo contrario www.let.it/be_good/ se compilará en www.let.it/be en PDF al pasar el cursor
 # - En los campos se puede utilizar código LaTeX para darle formato al texto.
+# - Si alguna sección queda cortada de forma no agradable (por ejemplo, que quedé el título al final de una página y el contenido en la que sigue)
+#   se puede utilizar el comando \newpage. Se debe colocar en el archivo `cv-section.tmpl.tex` al final de la sección anterior a la sección que se desea
+#   mover a otra página.
 # - Las secciones que espera esta plantilla se basan en el artículo 35 de la ordenanza del consejo superior OCS-1-15/97.
 #   Para este existen la siguiente secciones y sub-secciones:
 #     > [datos_personales] DATOS PERSONALES

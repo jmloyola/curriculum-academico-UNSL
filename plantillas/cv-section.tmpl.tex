@@ -1,3 +1,7 @@
+\providecommand{\espacioEntreSecciones}{\vspace{3mm}}
+\providecommand{\espacioEntreSubSecciones}{\vspace{2mm}}
+\providecommand{\espacioEntreItems}{\vspace{1mm}}
+
 \medskip
 
 \fontfamily{lmss}
@@ -5,7 +9,7 @@
 
 %\newgeometry{left=0mm,right=135mm}
 \fboxsep0pt
-\hspace{-20mm}\colorbox{maincolor}{\begin{minipage}[t][8mm][c]{180mm}
+\hspace{-20mm}\colorbox{maincolor}{\begin{minipage}[t][8mm][c]{192mm}
 \hspace{8mm}\bfseries \color{white}  ~{{ name }}~
 \end{minipage}}
 \vspace{6mm}
@@ -19,10 +23,9 @@
     \begin{tabular}{ @{} p{38mm} p{90mm} l @{}}
       {\small ~{{ dato.campo }}~}: & {\small ~{{ dato.valor }}~}
     \end{tabular}
-    \vspace{1mm}
+    \espacioEntreItems{}
   ~{ endfor }~
-  %additional space
-  \vspace{2mm}
+  \espacioEntreSecciones{}
 
 ~{ elif name == "A) ANTECEDENTES SOBRE LA FORMACIÓN" }~
   ~{ for subseccion in contents }~
@@ -37,9 +40,10 @@
               ~{- if item.promedio }~ Promedio con y sin aplazos: ~{{ item.promedio }}~. ~{ endif }~
               ~{- if item.resolución_egreso }~ Resolución de expedición de título: ~{{ item.resolución_egreso }}~. ~{ endif }~
               ~{- if item.resolución_admision }~ Resolución de admisión al doctorado y aprobación de plan: ~{{ item.resolución_admision }}~. ~{ endif }~
+        \espacioEntreItems{}
       ~{ endfor }~
       \end{itemize}
-      \vspace{1mm}
+      \espacioEntreSubSecciones{}
     ~{- endif -}~
 
     ~{ if subseccion.cursos_post_grado }~
@@ -51,10 +55,10 @@
               ~{- if item.resolucion_protocolizacion }~ Resolución de protocolización: ~{{ item.resolucion_protocolizacion }}~. ~{ endif }~
               ~{- if item.resolucion_aprobacion }~ Resolución de aprobación: ~{{ item.resolucion_aprobacion }}~. ~{ else }~ Resolución de aprobación en trámite. ~{ endif }~
               ~{- if item.resolución_rec_prot_aprob }~ Resolución de rectificación de protocolización y aprobación ~{{ item.resolución_rec_prot_aprob }}~. ~{ endif }~
-        \vspace{1mm}
+        \espacioEntreItems{}
       ~{ endfor }~
       \end{itemize}
-      \vspace{1mm}
+      \espacioEntreSubSecciones{}
     ~{- endif -}~
 
     ~{ if subseccion.otros_cursos }~
@@ -69,40 +73,40 @@
                 ~{{ item.año }}~.
                 ~{- if item.resolucion_protocolizacion }~ Resolución de protocolización: ~{{ item.resolucion_protocolizacion }}~. ~{ endif }~
                 ~{- if item.resolucion_aprobacion }~ Resolución de aprobación: ~{{ item.resolucion_aprobacion }}~. ~{ else }~ Resolución de aprobación en trámite. ~{ endif }~
-          \vspace{1mm}
+          \espacioEntreItems{}
         ~{ endif }~
 
         ~{- if item.tipo == "seminario" }~
           \item Asitencia al seminario ``~{{ item.nombre }}~'', ~{{ item.institucion }}~, ~{{ item.año }}~.
-          \vspace{1mm}
+          \espacioEntreItems{}
         ~{ endif }~
 
         ~{- if item.tipo == "jornada" }~
           \item Asitencia a la jornada ``~{{ item.nombre }}~'', ~{{ item.institucion }}~, ~{{ item.año }}~.
-          \vspace{1mm}
+          \espacioEntreItems{}
         ~{ endif }~
 
         ~{- if item.tipo == "charla" }~
           \item Asitencia a la charla de divulgación científica ``~{{ item.nombre }}~'', ~{{ item.institucion }}~, ~{{ item.año }}~.
                 ~{- if item.resolucion_asistencia }~ Resolución de asistencia: ~{{ item.resolucion_asistencia }}~. ~{ endif }~
-          \vspace{1mm}
+          \espacioEntreItems{}
         ~{ endif }~
 
         ~{- if item.tipo == "escuela" }~
           \item Asitencia a la escuela ``~{{ item.nombre }}~'', ~{{ item.institucion }}~, ~{{ item.año }}~.
-          \vspace{1mm}
+          \espacioEntreItems{}
         ~{ endif }~
 
         ~{- if item.tipo == "taller" }~
           \item Asitencia al taller de capacitación ``~{{ item.nombre }}~'', ~{{ item.institucion }}~, ~{{ item.año }}~.
                 ~{- if item.resolucion_protocolizacion }~ Resolución de protocolización: ~{{ item.resolucion_protocolizacion }}~. ~{ endif }~
                 ~{- if item.resolucion_asistencia }~ Resolución de asistencia: ~{{ item.resolucion_asistencia }}~. ~{ endif }~
-          \vspace{1mm}
+          \espacioEntreItems{}
         ~{ endif }~
 
       ~{ endfor }~
       \end{itemize}
-      \vspace{1mm}
+      \espacioEntreSubSecciones{}
     ~{- endif -}~
 
     ~{ if subseccion.becas_obtenidas }~
@@ -111,15 +115,14 @@
       ~{ for item in subseccion.becas_obtenidas }~
         % The symbol '-' eats leading / trailing whitespace, for example used with the if statement it does not generate new lines.
         \item ~{{ item.beca }}~
-        \vspace{1mm}
+        \espacioEntreItems{}
       ~{ endfor }~
       \end{itemize}
-      \vspace{1mm}
+      \espacioEntreSubSecciones{}
     ~{- endif -}~
 
   ~{ endfor }~
-  %additional space
-  \vspace{2mm}
+  \espacioEntreSecciones{}
 
 ~{ elif name == "B) ANTECEDENTES DOCENTES Y DE FORMACIÓN DE RECURSOS HUMANOS" }~
   ~{ for subseccion in contents }~
@@ -131,14 +134,14 @@
         \item ~{{ item.cargo }}~, dedicación ~{{ item.dedicacion }}~, carácter ~{{ item.caracter }}~, en ~{{ item.institucion }}~, ~{{ item.fecha }}~.
               ~{- if item.resolucion_llamado }~ Resolución de llamado a concurso: ~{{ item.resolucion_llamado }}~. ~{ endif }~
               ~{- if item.resolucion_orden_merito }~ Resolución de orden de mérito: ~{{ item.resolucion_orden_merito }}~. ~{ endif }~
+        \espacioEntreItems{}
       ~{ endfor }~
       \end{itemize}
-      \vspace{1mm}
+      \espacioEntreSubSecciones{}
     ~{- endif -}~
 
   ~{ endfor }~
-  %additional space
-  \vspace{2mm}
+  \espacioEntreSecciones{}
 
 
 ~{ elif name == "C) ANTECEDENTES SOBRE ACTIVIDAD Y PRODUCCIÓN CIENTÍFICA O TECNOLÓGICA" }~
@@ -152,9 +155,10 @@
               ~{- if item.codigo }~ ~{{ item.codigo }}~, ~{ endif }~
               ~{{ item.fecha }}~.
               ~{- if item.resolucion }~ Resolución: ~{{ item.resolucion }}~. ~{ endif }~
+        \espacioEntreItems{}
       ~{ endfor }~
       \end{itemize}
-      \vspace{1mm}
+      \espacioEntreSubSecciones{}
     ~{- endif -}~
 
     ~{ if subseccion.publicaciones }~
@@ -166,6 +170,7 @@
           \item ~{{ item.autores }}~, ``~{{ item.titulo }}~'', en ~{{ item.revista }}~.
                 ~{- if item.ISBN }~ ISBN: ~{{ item.ISBN }}~. ~{ endif }~
                 ~{- if item.DOI }~ DOI: ~{{ item.DOI }}~. ~{ endif }~
+          \espacioEntreItems{}
 
         ~{ elif item.tipo == "preprints" }~
 
@@ -179,7 +184,7 @@
         ~{- endif -}~
       ~{ endfor }~
       \end{itemize}
-      \vspace{1mm}
+      \espacioEntreSubSecciones{}
     ~{- endif -}~
 
     ~{ if subseccion.trabajos_tesis }~
@@ -189,9 +194,10 @@
         % The symbol '-' eats leading / trailing whitespace, for example used with the if statement it does not generate new lines.
         \item ~{{ item.tipo }}~ ``~{{ item.titulo }}~'', ~{{ item.institucion }}~, ~{{ item.fecha }}~.
               ~{- if item.resolucion }~ Resolución: ~{{ item.resolucion }}~. ~{ endif }~
+        \espacioEntreItems{}
       ~{ endfor }~
       \end{itemize}
-      \vspace{1mm}
+      \espacioEntreSubSecciones{}
     ~{- endif -}~
 
     ~{ if subseccion.eventos_cientificos }~
@@ -208,14 +214,14 @@
                 ~{ elif item.tipo_trabajo == "presentacion_oral" }~ Defensa oral del trabajo ``~{{ item.titulo_trabajo }}~''.
                 ~{ elif item.tipo_trabajo == "poster" }~ Autor del poster ``~{{ item.titulo_trabajo }}~''. ~{- endif -}~
               ~{- endif -}~
+        \espacioEntreItems{}
       ~{ endfor }~
       \end{itemize}
-      \vspace{1mm}
+      \espacioEntreSubSecciones{}
     ~{- endif -}~
 
   ~{ endfor }~
-  %additional space
-  \vspace{2mm}
+  \espacioEntreSecciones{}
 
 
 ~{ elif name == "D) ANTECEDENTES SOBRE ACTIVIDADES DE EXTENSIÓN" }~
@@ -226,14 +232,14 @@
       ~{ for item in subseccion.actividades_comunidad }~
         % The symbol '-' eats leading / trailing whitespace, for example used with the if statement it does not generate new lines.
         \item ~{{ item.detalle }}~.
+        \espacioEntreItems{}
       ~{ endfor }~
       \end{itemize}
-      \vspace{1mm}
+      \espacioEntreSubSecciones{}
     ~{- endif -}~
 
   ~{ endfor }~
-  %additional space
-  \vspace{2mm}
+  \espacioEntreSecciones{}
 
 
 ~{ elif name == "E) ANTECEDENTES DE GESTIÓN Y GOBIERNO UNIVERSITARIO Y NO UNIVERSITARIO" }~
@@ -244,9 +250,10 @@
       ~{ for item in subseccion.antecedentes_laborales }~
         % The symbol '-' eats leading / trailing whitespace, for example used with the if statement it does not generate new lines.
         \item ~{{ item.detalle }}~.
+        \espacioEntreItems{}
       ~{ endfor }~
       \end{itemize}
-      \vspace{1mm}
+      \espacioEntreSubSecciones{}
     ~{- endif -}~
 
     ~{ if subseccion.premios }~
@@ -254,9 +261,10 @@
       \begin{itemize}
       ~{ for item in subseccion.premios }~
         \item ~{{ item.detalle }}~.
+        \espacioEntreItems{}
       ~{ endfor }~
       \end{itemize}
-      \vspace{1mm}
+      \espacioEntreSubSecciones{}
     ~{- endif -}~
 
     ~{ if subseccion.antecedentes_concurso }~
@@ -265,14 +273,14 @@
       ~{ for item in subseccion.antecedentes_concurso }~
         % The symbol '-' eats leading / trailing whitespace, for example used with the if statement it does not generate new lines.
         \item ~{{ item.detalle }}~.
+        \espacioEntreItems{}
       ~{ endfor }~
       \end{itemize}
-      \vspace{1mm}
+      \espacioEntreSubSecciones{}
     ~{- endif -}~
 
   ~{ endfor }~
-  %additional space
-  \vspace{2mm}
+  \espacioEntreSecciones{}
 
 
 ~{ elif name == "F) OTROS ANTECEDENTES QUE SE CONSIDEREN RELEVANTES" }~
@@ -283,13 +291,13 @@
     ~{ for item in subseccion.antecedentes }~
       % The symbol '-' eats leading / trailing whitespace, for example used with the if statement it does not generate new lines.
       \item ~{{ item.detalle }}~.
+      \espacioEntreItems{}
     ~{ endfor }~
     \end{itemize}
-    \vspace{1mm}
+    \espacioEntreSubSecciones{}
 
   ~{ endfor }~
-  %additional space
-  \vspace{2mm}
+  \espacioEntreSecciones{}
 
 
 ~{ else }~
