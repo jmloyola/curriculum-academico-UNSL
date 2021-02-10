@@ -67,7 +67,7 @@
       ~{ for item in subseccion.otros_cursos }~
         ~{- if item.tipo == "curso" }~
           % The symbol '-' eats leading / trailing whitespace, for example used with the if statement it does not generate new lines.
-          \item ~{ if item.tipo_certificacion == "aprobacion" }~ Aprobación del curso ~{ elif item.tipo_certificacion == "asistencia" }~ Asitencia al curso ~{ endif }~
+          \item ~{ if item.tipo_certificacion == "aprobacion" }~ Aprobación del curso ~{ elif item.tipo_certificacion == "asistencia" }~ Asistencia al curso ~{ endif }~
                 ``~{{ item.nombre }}~'', ~{{ item.institucion }}~,
                 ~{- if item.creditos }~ ~{{ item.creditos }}~, ~{ endif }~
                 ~{{ item.año }}~.
@@ -77,28 +77,35 @@
         ~{ endif }~
 
         ~{- if item.tipo == "seminario" }~
-          \item Asitencia al seminario ``~{{ item.nombre }}~'', ~{{ item.institucion }}~, ~{{ item.año }}~.
+          \item Asistencia al seminario ``~{{ item.nombre }}~'', ~{{ item.institucion }}~, ~{{ item.año }}~.
           \espacioEntreItems{}
         ~{ endif }~
 
         ~{- if item.tipo == "jornada" }~
-          \item Asitencia a la jornada ``~{{ item.nombre }}~'', ~{{ item.institucion }}~, ~{{ item.año }}~.
+          \item Asistencia a la jornada ``~{{ item.nombre }}~'', ~{{ item.institucion }}~, ~{{ item.año }}~.
           \espacioEntreItems{}
         ~{ endif }~
 
         ~{- if item.tipo == "charla" }~
-          \item Asitencia a la charla de divulgación científica ``~{{ item.nombre }}~'', ~{{ item.institucion }}~, ~{{ item.año }}~.
+          \item Asistencia a la charla de divulgación científica ``~{{ item.nombre }}~'', ~{{ item.institucion }}~, ~{{ item.año }}~.
                 ~{- if item.resolucion_asistencia }~ Resolución de asistencia: ~{{ item.resolucion_asistencia }}~. ~{ endif }~
           \espacioEntreItems{}
         ~{ endif }~
 
+        ~{- if item.tipo == "programa" }~
+          \item Aprobación del programa de actualización de posgrado ``~{{ item.nombre }}~'', ~{{ item.institucion }}~, ~{{ item.año }}~.
+                ~{- if item.resolucion_protocolizacion }~ Resolución de protocolización: ~{{ item.resolucion_protocolizacion }}~. ~{ endif }~
+                ~{- if item.resolucion_aprobacion }~ Resolución de aprobación: ~{{ item.resolucion_aprobacion }}~. ~{ endif }~
+          \espacioEntreItems{}
+        ~{ endif }~
+
         ~{- if item.tipo == "escuela" }~
-          \item Asitencia a la escuela ``~{{ item.nombre }}~'', ~{{ item.institucion }}~, ~{{ item.año }}~.
+          \item Asistencia a la escuela ``~{{ item.nombre }}~'', ~{{ item.institucion }}~, ~{{ item.año }}~.
           \espacioEntreItems{}
         ~{ endif }~
 
         ~{- if item.tipo == "taller" }~
-          \item Asitencia al taller de capacitación ``~{{ item.nombre }}~'', ~{{ item.institucion }}~, ~{{ item.año }}~.
+          \item Asistencia al taller de capacitación ``~{{ item.nombre }}~'', ~{{ item.institucion }}~, ~{{ item.año }}~.
                 ~{- if item.resolucion_protocolizacion }~ Resolución de protocolización: ~{{ item.resolucion_protocolizacion }}~. ~{ endif }~
                 ~{- if item.resolucion_asistencia }~ Resolución de asistencia: ~{{ item.resolucion_asistencia }}~. ~{ endif }~
           \espacioEntreItems{}
@@ -167,7 +174,7 @@
       ~{ for item in subseccion.publicaciones }~
         % The symbol '-' eats leading / trailing whitespace, for example used with the if statement it does not generate new lines.
         ~{ if item.tipo == "articulo" }~
-          \item ~{{ item.autores }}~, ``~{{ item.titulo }}~'', en ~{{ item.revista }}~.
+          \item ~{{ item.autores }}~, ``~{{ item.titulo }}~'', en ~{{ item.revista }}~ ~{- if item.fecha }~, ~{{ item.fecha }}~ ~{ endif }~.
                 ~{- if item.ISBN }~ ISBN: ~{{ item.ISBN }}~. ~{ endif }~
                 ~{- if item.DOI }~ DOI: ~{{ item.DOI }}~. ~{ endif }~
           \espacioEntreItems{}
