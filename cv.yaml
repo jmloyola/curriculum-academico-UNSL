@@ -57,7 +57,7 @@ secciones_a_incluir:
   - [antecedentes_produccion, C) ANTECEDENTES SOBRE ACTIVIDAD Y PRODUCCIÓN CIENTÍFICA O TECNOLÓGICA]
   - [antecedentes_extension, D) ANTECEDENTES SOBRE ACTIVIDADES DE EXTENSIÓN]
 #  - [antecedentes_gestion, E) ANTECEDENTES DE GESTIÓN Y GOBIERNO UNIVERSITARIO Y NO UNIVERSITARIO]
-  - [otros_antecedentes, F) OTROS ANTECEDENTES QUE SE CONSIDEREN RELEVANTES]
+  - [otros_antecedentes, E) OTROS ANTECEDENTES QUE SE CONSIDEREN RELEVANTES]
   
 
 datos_personales:
@@ -79,11 +79,10 @@ datos_personales:
 
 antecedentes_formacion:
   - titulos_universitarios:
-    - titulo: Analista Programador Universitario
-      universidad: Facultad de Ciencias Físico Matemáticas y Naturales (FCFMyN), Universidad Nacional de San Luis (UNSL)
-      egreso: 2014
-      promedio: 8,49
-      resolución_egreso: RD-3-319/15
+    - titulo: Doctor en Ciencias de la Computación
+      universidad: FCFMyN, UNSL
+      egreso_estimado: 2022
+      resolución_admision: RD-3-636/18
 
     - titulo: Licenciado en Ciencias de la Computación
       universidad: FCFMyN, UNSL
@@ -91,57 +90,40 @@ antecedentes_formacion:
       promedio: 8,81
       resolución_egreso: RD-3-238/17
 
-    - titulo: Doctor en Ciencias de la Computación
-      universidad: FCFMyN, UNSL
-      egreso_estimado: 2022
-      resolución_admision: RD-3-636/18
+    - titulo: Analista Programador Universitario
+      universidad: Facultad de Ciencias Físico Matemáticas y Naturales (FCFMyN), Universidad Nacional de San Luis (UNSL)
+      egreso: 2014
+      promedio: 8,49
+      resolución_egreso: RD-3-319/15
 
   - cursos_post_grado:
-    - nombre: Nuevas Propuestas para Búsquedas por Similitud en Bases de Datos Métricas
+    - nombre: Minería de Textos
       institucion: UNSL
       creditos: 60 horas
-      año: 2017
-      resolucion_protocolizacion: RR-3-1269/17
-      resolucion_aprobacion: RR-3-1452/18
+      año: 2020
+      resolucion_protocolizacion: en trámite
+      resolucion_aprobacion: en trámite
 
-    - nombre: Epistemología
+    - nombre: Tecnologías informáticas aplicadas a la gestión del territorio
       institucion: UNSL
-      creditos: 80 horas
-      año: 2017
-      resolucion_protocolizacion: RR-4-1729/17
-      resolucion_aprobacion: RR-4-410/18
+      creditos: 40 horas
+      año: 2020
+      resolucion_protocolizacion: RR-2-146/20
+      resolucion_aprobacion: RR-2-754/20
 
-    - nombre: Introducción al Aprendizaje Profundo
+    - nombre: Métodos Avanzados en Inferencia y Aprendizaje Estadístico
       institucion: UNSL
-      creditos: 60 horas
-      año: 2017
-      resolucion_protocolizacion: RR-3-1758/17
-      resolución_rec_prot_aprob: RR-3-191/18
+      creditos: 90 horas
+      año: 2019
+      resolucion_protocolizacion: RR-3-1743/19
+      resolucion_aprobacion: en trámite
 
-    - nombre: Redacción de Textos Científicos
-      institucion: UNSL
-      creditos: 30 horas
-      año: 2018
-      resolucion_protocolizacion: RR-1-1586/17
-      resolucion_aprobacion: RR-1-1039/18
-
-    - nombre: Introducción a la Ciencia de Datos
+    - nombre: Minería de Datos
       institucion: UNSL
       creditos: 60 horas
       año: 2018
-      resolucion_protocolizacion: RR-3-256/18
-
-    - nombre: Matemática para Ciencia de Datos
-      institucion: UNSL
-      creditos: 60 horas
-      año: 2018
-      resolucion_protocolizacion: RR-3-854/18
-
-    - nombre: Análisis Bayesiano de Datos
-      institucion: UNSL
-      creditos: 60 horas
-      año: 2018
-      resolucion_protocolizacion: RR-3-1025/18
+      resolucion_protocolizacion: RR-3-1654/18
+      resolucion_aprobacion: RR-3-1368/19
 
     - nombre: Escritura Científica en Inglés
       institucion: UNSL
@@ -150,34 +132,153 @@ antecedentes_formacion:
       resolucion_protocolizacion: RR-1-1748/17
       resolucion_aprobacion: RR-1-1940/18
 
-    - nombre: Minería de Datos
+    - nombre: Análisis Bayesiano de Datos
       institucion: UNSL
       creditos: 60 horas
       año: 2018
-      resolucion_protocolizacion: RR-3-1654/18
+      resolucion_protocolizacion: RR-3-1025/18
+      resolucion_aprobacion: RR-3-655/19
+
+    - nombre: Matemática para Ciencia de Datos
+      institucion: UNSL
+      creditos: 60 horas
+      año: 2018
+      resolucion_protocolizacion: RR-3-854/18
+      resolucion_aprobacion: RR-3-1451/19
+
+    - nombre: Introducción a la Ciencia de Datos
+      institucion: UNSL
+      creditos: 60 horas
+      año: 2018
+      resolucion_protocolizacion: RR-3-256/18
+      resolucion_aprobacion: RR-3-481/19
+
+    - nombre: Redacción de Textos Científicos
+      institucion: UNSL
+      creditos: 30 horas
+      año: 2018
+      resolucion_protocolizacion: RR-1-1586/17
+      resolucion_aprobacion: RR-1-1039/18
+
+    - nombre: Introducción al Aprendizaje Profundo
+      institucion: UNSL
+      creditos: 60 horas
+      año: 2017
+      resolucion_protocolizacion: RR-3-1758/17
+      resolución_rec_prot_aprob: RR-3-191/18
+
+    - nombre: Epistemología
+      institucion: UNSL
+      creditos: 80 horas
+      año: 2017
+      resolucion_protocolizacion: RR-4-1729/17
+      resolucion_aprobacion: RR-4-410/18
+
+    - nombre: Nuevas Propuestas para Búsquedas por Similitud en Bases de Datos Métricas
+      institucion: UNSL
+      creditos: 60 horas
+      año: 2017
+      resolucion_protocolizacion: RR-3-1269/17
+      resolucion_aprobacion: RR-3-1452/18
 
   - otros_cursos:
-    - nombre: Ingles
+    - nombre: Inglés
       tipo: curso
       institucion: Instituto William Shakespeare de San Luis
-      año: 2003-2005 y 2007-2010
+      año: 2003-2005, 2007-2010 y 2020
       tipo_certificacion: aprobacion
 
-    - nombre: Simulación de Accidentes de Tránsito dentro de un ambiente de Realidad Virtual
-      tipo: seminario
+    - nombre: Introducción a la Ciencia de Datos
+      tipo: programa
       institucion: UNSL
-      año: 2012
+      año: 2018
+      resolucion_protocolizacion: RR-3-2082/17
+      resolucion_aprobacion: RR-3-946/20
 
-    - nombre: Un Ciberespacio Seguro y Confiable. Propuestas para mitigar las Ciberamenazas (Ciberdelito, Ciberterrorismo y Ciberguerra)
-      tipo: jornada
+    - nombre: La Propiedad Intelectual e Industrial en el ámbito académico
+      tipo: taller
       institucion: UNSL
-      año: 2012
+      año: 2018
+      resolucion_protocolizacion: RD-3-532/18
+      resolucion_asistencia: RD-3-702/18
 
-    - nombre: "Amenazas Informáticas: el Problema, la Solución y la Implementación"
+    - nombre: Machine Learning Summer School
+      tipo: escuela
+      institucion: Universidad Torcuato Di Tella
+      año: 2018
+
+    - nombre: "Aprendizaje Automático: El Flujo de Trabajo con Ayuda de PYTHON"
       tipo: charla
       institucion: UNSL
+      año: 2017
+      resolucion: RD-3-761/17
+
+    - nombre: Ofuscación de Código y sus Aplicaciones a la Seguridad Informática
+      tipo: charla
+      institucion: UNSL
+      año: 2017
+
+    - nombre: Ingeniería Reversa y Tecnologías Asociadas
+      tipo: charla
+      institucion: UNSL
+      año: 2017
+
+    - nombre: "T3 - ‘Big Data’ Systems"
+      tipo: curso
+      institucion: UBA
+      creditos: 15 horas
+      año: 2017
+      tipo_certificacion: asistencia
+
+    - nombre: "M1 - Bayesian Models in Machine Learning"
+      tipo: curso
+      institucion: UBA
+      creditos: 15 horas
+      año: 2017
+      tipo_certificacion: asistencia
+
+    - nombre: Introducción a la Computación Afectiva
+      tipo: charla
+      institucion: UNSL
+      año: 2017
+      resolucion_asistencia: RD-3-312/17
+
+    - nombre: "N1 - Métodos Actuales en Machine Learning"
+      tipo: curso
+      institucion: UBA
+      creditos: 15 horas
+      año: 2014
+      tipo_certificacion: aprobacion
+
+    - nombre: "M1 - Big Data, Architecture: Compute, Storage, Networking Challenges"
+      tipo: curso
+      institucion: Universidad de Buenos Aires (UBA)
+      creditos: 15 horas
+      año: 2014
+      tipo_certificacion: asistencia
+
+    - nombre: "La internet de las cosas: nuevos protocolos – 6LowPAN"
+      tipo: charla
+      institucion: UNSL
+      año: 2014
+      resolucion_asistencia: RD-3-549/14
+
+    - nombre: "Turismo Académico, clase Estudiante: Viajando gracias a las competencias académicas"
+      tipo: charla
+      institucion: UNSL
+      año: 2014
+      resolucion_asistencia: RD-3-119/14
+
+    - nombre: Programación de Agentes en JADE
+      tipo: curso
+      institucion: UNSL
       año: 2013
-      resolucion_asistencia: RD-3-562/13
+      tipo_certificacion: aprobacion
+
+    - nombre: Primera Escuela de Informática InforSanLuis 2013
+      tipo: escuela
+      institucion: UNSL
+      año: 2013
 
     - nombre: Sistemas de Control de Versiones Descentralizados
       tipo: curso
@@ -188,96 +289,27 @@ antecedentes_formacion:
       resolucion_protocolizacion: RDInf-3-113/13
       resolucion_aprobacion: RDInf-3-142/13
 
-    - nombre: Primera Escuela de Informática InforSanLuis 2013
-      tipo: escuela
+    - nombre: "Amenazas Informáticas: el Problema, la Solución y la Implementación"
+      tipo: charla
       institucion: UNSL
       año: 2013
+      resolucion_asistencia: RD-3-562/13
 
-    - nombre: Programación de Agentes en JADE
-      tipo: curso
+    - nombre: Un Ciberespacio Seguro y Confiable. Propuestas para mitigar las Ciberamenazas (Ciberdelito, Ciberterrorismo y Ciberguerra)
+      tipo: jornada
       institucion: UNSL
-      año: 2013
-      tipo_certificacion: aprobacion
+      año: 2012
 
-    - nombre: "Turismo Académico, clase Estudiante: Viajando gracias a las competencias académicas"
-      tipo: charla
+    - nombre: Simulación de Accidentes de Tránsito dentro de un ambiente de Realidad Virtual
+      tipo: seminario
       institucion: UNSL
-      año: 2014
-      resolucion_asistencia: RD-3-119/14
-
-    - nombre: "La internet de las cosas: nuevos protocolos – 6LowPAN"
-      tipo: charla
-      institucion: UNSL
-      año: 2014
-      resolucion_asistencia: RD-3-549/14
-
-    - nombre: "M1 - Big Data, Architecture: Compute, Storage, Networking Challenges"
-      tipo: curso
-      institucion: Universidad de Buenos Aires (UBA)
-      creditos: 15 horas
-      año: 2014
-      tipo_certificacion: asistencia
-
-    - nombre: "N1 - Métodos Actuales en Machine Learning"
-      tipo: curso
-      institucion: UBA
-      creditos: 15 horas
-      año: 2014
-      tipo_certificacion: aprobacion
-
-    - nombre: Introducción a la Computación Afectiva
-      tipo: charla
-      institucion: UNSL
-      año: 2017
-      resolucion_asistencia: RD-3-312/17
-
-    - nombre: "M1 - Bayesian Models in Machine Learning"
-      tipo: curso
-      institucion: UBA
-      creditos: 15 horas
-      año: 2017
-      tipo_certificacion: asistencia
-
-    - nombre: "T3 - ‘Big Data’ Systems"
-      tipo: curso
-      institucion: UBA
-      creditos: 15 horas
-      año: 2017
-      tipo_certificacion: asistencia
-
-    - nombre: Ingeniería Reversa y Tecnologías Asociadas
-      tipo: charla
-      institucion: UNSL
-      año: 2017
-
-    - nombre: Ofuscación de Código y sus Aplicaciones a la Seguridad Informática
-      tipo: charla
-      institucion: UNSL
-      año: 2017
-
-    - nombre: "Aprendizaje Automático: El Flujo de Trabajo con Ayuda de PYTHON"
-      tipo: charla
-      institucion: UNSL
-      año: 2017
-      resolucion: RD-3-761/17
-
-    - nombre: Machine Learning Summer School
-      tipo: escuela
-      institucion: Universidad Torcuato Di Tella
-      año: 2018
-
-    - nombre: La Propiedad Intelectual e Industrial en el ámbito académico
-      tipo: taller
-      institucion: UNSL
-      año: 2018
-      resolucion_protocolizacion: RD-3-532/18
-      resolucion_asistencia: RD-3-702/18
+      año: 2012
 
   - becas_obtenidas:
-    - beca: Beca para asistir a la ``Escuela de Ciencias Informáticas 2014'', UBA, 2014.
-    - beca: "Beca de finalización de carrera ``Becas de Fin de Carrera para Estudiantes de Grado en Carreras TICs 2011'', Agencia Nacional de Promoción Científica y Tecnológica (ANPCYT) del Ministerio de Ciencia, Tecnología e Innovación Productiva de la Nación (MINCYT), 2014. Resolución de designación: 1843/14."
-    - beca: Beca de doctorado ``Beca Interna Doctoral en el marco de Proyectos de Investigación de Unidades Ejecutoras'', CONICET, abril 2017 hasta marzo 2022.
     - beca: Beca para asistir a la escuela ``Machine Learning Summer School'', Fundación Sadosky, 2018.
+    - beca: Beca de doctorado ``Beca Interna Doctoral en el marco de Proyectos de Investigación de Unidades Ejecutoras'', CONICET, abril 2017 hasta marzo 2022.
+    - beca: "Beca de finalización de carrera ``Becas de Fin de Carrera para Estudiantes de Grado en Carreras TICs 2011'', Agencia Nacional de Promoción Científica y Tecnológica (ANPCYT) del Ministerio de Ciencia, Tecnología e Innovación Productiva de la Nación (MINCYT), 2014. Resolución de designación: 1843/14."
+    - beca: Beca para asistir a la ``Escuela de Ciencias Informáticas 2014'', UBA, 2014.
 
 antecedentes_docente:
   - cargos_docentes:
@@ -285,12 +317,26 @@ antecedentes_docente:
       dedicacion: Simple
       caracter: Efectivo
       institucion: Área de Datos del Departamento de Informática, UNSL
-      fecha: 2019
+      fecha: desde 2019 a la fecha
       resolucion_llamado: RCD-3-183/18
       resolucion_orden_merito: RDInf-3-112/15
 
 antecedentes_produccion:
   - investigacion:
+    - proyecto: Aprendizaje automático y toma de decisiones en sistemas inteligentes para la web
+      cargo: Integrante
+      institucion: UNSL
+      codigo: PROICO 03-0620
+      fecha: desde 2020 a la fecha
+      resolucion: RCS-1-138/20
+
+    - proyecto: Aprendizaje automático y toma de decisiones en sistemas inteligentes para la web
+      cargo: Integrante
+      institucion: UNSL
+      codigo: PROICO 03-1816
+      fecha: desde 2016 a 2020
+      resolucion: RR-1-108/17
+
     - proyecto: Herramientas y mecanismos para la toma de decisiones en agentes artificiales inteligentes
       cargo: Integrante
       institucion: UNSL
@@ -298,14 +344,14 @@ antecedentes_produccion:
       fecha: desde 2015 a 2016
       resolucion: RCS-1-48/16
 
-    - proyecto: Aprendizaje automático y toma de decisiones en sistemas inteligentes para la web
-      cargo: Integrante
-      institucion: UNSL
-      codigo: PROICO 03-1816
-      fecha: desde 2016 a la fecha
-      resolucion: RR-1-108/17
-
   - publicaciones:
+    - tipo: articulo
+      titulo: "Classification of RNA backbone conformations into rotamers using 13C' chemical shifts: exploring how far we can go"
+      autores: Alejandro A Icazatti, \textbf{Juan Martín Loyola}, Igal Szleifer, Jorge A Vila, Osvaldo A Martin
+      revista: PeerJ
+      fecha: 2019
+      DOI: 10.7717/peerj.7904
+
     - tipo: articulo
       titulo: Learning When to Classify for Early Text Classification
       autores: \textbf{Juan Martín Loyola}, Marcelo Luis Errecalde, Hugo Jair Escalante, Manuel Montes y Gomez
@@ -321,29 +367,45 @@ antecedentes_produccion:
       resolucion: RD-3-110/17
       
   - eventos_cientificos:
-    - nombre_evento: 2º Congreso Nacional de Ingeniería Informática / Sistemas de Información (CoNaIISI 2014)
-      tipo_evento: congreso
-      tipo_participacion: asistencia
+    - nombre_evento: Taller Argentino de Computación Científica
+      tipo_participacion: participacion
       institucion: UNSL
       lugar: San Luis, Argentina
-      fecha: 13 y 14 de noviembre de 2014
+      fecha: 5 y 6 de diciembre de 2019
+      titulo_trabajo: Introducción al Aprendizaje Profundo
+      tipo_trabajo: charla
 
-    - nombre_evento: Congreso Curricular de Ciencias de la Computación
-      tipo_evento: congreso
-      tipo_participacion: debate
-      institucion: Facultad de Matemática, Astronomía y Física, Universidad Nacional de Córdoba
-      lugar: Córdoba, Argentina
-      fecha: 28 y 29 de mayo de 2015
+    - nombre_evento: Taller Argentino de Computación Científica
+      tipo_participacion: organizacion
+      institucion: UNSL
+      lugar: San Luis, Argentina
+      fecha: 5 y 6 de diciembre de 2019
 
-    - nombre_evento: XVIII Workshop de Investigadores en Ciencias de la Computación
-      tipo_evento: workshop
+    - nombre_evento: I Jornadas de Informática
       tipo_participacion: participacion
-      institucion: Universidad Nacional de Entre Ríos
-      lugar: Concordia, Entre Ríos, Argentina
-      fecha: 14 y 15 de abril de 2016
-      titulo_trabajo: Toma de decisiones y aprendizaje en agentes artificiales inteligentes
-      tipo_trabajo: articulo
-      autores: Edgardo Ferretti, Cecilia Sosa Toranzo, Guillermo Aguirre, \textbf{Juan Martín Loyola}, Leticia Cagnina, Marcelo Errecalde
+      institucion: UNSL
+      lugar: San Luis, Argentina
+      fecha: 15 de noviembre de 2019
+      titulo_trabajo: Deep Learning
+      tipo_trabajo: charla
+
+    - nombre_evento: Machine Learning Summer School
+      tipo_evento: escuela
+      tipo_participacion: participacion
+      institucion: Universidad Torcuato Di Tella
+      lugar: Ciudad Autónoma de Buenos Aires, Argentina
+      fecha: 18 al 30 de junio de 2018
+      titulo_trabajo: Early Text Classification for Early Detection of Signs of Depression
+      tipo_trabajo: poster
+
+    - nombre_evento: PyData San Luis
+      tipo_evento: conferencia
+      tipo_participacion: participacion
+      institucion: UNSL
+      lugar: San Luis, Argentina
+      fecha: 16 al 18 de noviembre de 2017
+      titulo_trabajo: Is it necessary to read the entire document to classify?
+      tipo_trabajo: poster
 
     - nombre_evento: XXIII Congreso Argentino de Ciencias de la Computación
       tipo_evento: congreso
@@ -355,38 +417,46 @@ antecedentes_produccion:
       titulo_trabajo: Learning When to Classify for Early Text Classification
       tipo_trabajo: presentacion_oral
 
-    - nombre_evento: PyData San Luis
-      tipo_evento: conferencia
+    - nombre_evento: XVIII Workshop de Investigadores en Ciencias de la Computación
+      tipo_evento: workshop
       tipo_participacion: participacion
+      institucion: Universidad Nacional de Entre Ríos
+      lugar: Concordia, Entre Ríos, Argentina
+      fecha: 14 y 15 de abril de 2016
+      titulo_trabajo: Toma de decisiones y aprendizaje en agentes artificiales inteligentes
+      tipo_trabajo: articulo
+      autores: Edgardo Ferretti, Cecilia Sosa Toranzo, Guillermo Aguirre, \textbf{Juan Martín Loyola}, Leticia Cagnina, Marcelo Errecalde
+
+    - nombre_evento: Congreso Curricular de Ciencias de la Computación
+      tipo_evento: congreso
+      tipo_participacion: debate
+      institucion: Facultad de Matemática, Astronomía y Física, Universidad Nacional de Córdoba
+      lugar: Córdoba, Argentina
+      fecha: 28 y 29 de mayo de 2015
+
+    - nombre_evento: 2º Congreso Nacional de Ingeniería Informática / Sistemas de Información (CoNaIISI 2014)
+      tipo_evento: congreso
+      tipo_participacion: asistencia
       institucion: UNSL
       lugar: San Luis, Argentina
-      fecha: 16 al 18 de noviembre de 2017
-      titulo_trabajo: Is it necessary to read the entire document to classify?
-      tipo_trabajo: poster
-
-    - nombre_evento: Machine Learning Summer School
-      tipo_evento: escuela
-      tipo_participacion: participacion
-      institucion: Universidad Torcuato Di Tella
-      lugar: Ciudad Autónoma de Buenos Aires, Argentina
-      fecha: 18 al 30 de junio de 2018
-      titulo_trabajo: Early Text Classification for Early Detection of Signs of Depression
-      tipo_trabajo: poster
+      fecha: 13 y 14 de noviembre de 2014
 
 antecedentes_extension:
   - actividades_comunidad:
     - detalle: Participación de las jornadas ``IMASL Abre sus Puertas'', destinada para alumnos de nivel secundario, con el objetivo de difundir las actividades que desarrollan los Proyectos de Investigación del Instituto de Matemática Aplicada San Luis, entre abril y octubre de 2018
+    - detalle: Co-organizador de los encuentros de la \href{https://www.meetup.com/es/PyData-San-Luis/members/?op=leaders}{PyData San Luis}
 
 otros_antecedentes:
   - titulo: ANTECEDENTES LABORALES
     antecedentes:
+    - detalle: Participación en el programa ``Google Summer of Code 2019'' bajo la organización NumFOCUS con el proyecto ``\href{https://summerofcode.withgoogle.com/projects/4666396833742848}{Bayesian Additive Regression Trees in PyMC3}''
     - detalle: Ingeniero de Software en Mercado Libre, integrante del equipo de prevención de fraude, desde el 4 enero de 2016 hasta el 6 marzo de 2017
 
   - titulo: PREMIOS Y DISTINCIONES
     antecedentes:
-    - detalle: Abanderado del nivel secundario del colegio María Auxiliadora, San Luis, Argentina, 2009
     - detalle: "Segundo escolta de la bandera de ceremonia en representación de la FCFMyN de la UNSL hasta mayo de 2016. Resolución de designación: RD-3-279/15"
+    - detalle: Abanderado del nivel secundario del colegio María Auxiliadora, San Luis, Argentina, 2009
 
-  - titulo: CONOCIMIENTOS ESPECÍFICOS RELATIVOS AL LLAMADO DEL PRESENTE CONCURSO
-    antecedentes:
-    - detalle: "Aprobación del curso optativo de la Licenciatura en Ciencias de la Computación ``Base de Datos Avanzados'', UNSL, 2014. Calificación: 10"
+#  - titulo: CONOCIMIENTOS ESPECÍFICOS RELATIVOS AL LLAMADO DEL PRESENTE CONCURSO
+#    antecedentes:
+#    - detalle: "Aprobación del curso optativo de la Licenciatura en Ciencias de la Computación ``Base de Datos Avanzados'', UNSL, 2014. Calificación: 10"
