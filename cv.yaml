@@ -101,8 +101,8 @@ antecedentes_formacion:
       institucion: UNSL
       creditos: 60 horas
       año: 2020
-      resolucion_protocolizacion: en trámite
-      resolucion_aprobacion: en trámite
+      resolucion_protocolizacion: RR-3-1156/20
+      resolucion_aprobacion: RR-3-71/21
 
     - nombre: Tecnologías informáticas aplicadas a la gestión del territorio
       institucion: UNSL
@@ -182,6 +182,27 @@ antecedentes_formacion:
       resolucion_aprobacion: RR-3-1452/18
 
   - otros_cursos:
+    - nombre: Intelegencia Artificial Aplicada al Retail
+      tipo: charla
+      institucion: UNSL
+      año: 2021
+      resolucion_asistencia: RD-3-800/21
+
+    - nombre: "Seminario Internacional: Privacidad y Anonimización de Datos Personales"
+      tipo: seminario
+      institucion: Information and Communication Technologies for Verticals (ICT4V)
+      año: 2020
+
+    - nombre: GPUs para ML, un enfoque práctico
+      tipo: charla
+      institucion: FaMAF
+      año: 2020
+
+    - nombre: Escuela de Aprendizaje Profundo aplicado a las Tecnologías del Lenguaje
+      tipo: escuela
+      institucion: "Asociación Mexicana de Procesamiento de Lenguaje Natural (AMPLN) y Red Temática en Tecnologías del Lenguaje (RedTTL)"
+      año: 2020
+
     - nombre: Inglés
       tipo: curso
       institucion: Instituto William Shakespeare de San Luis
@@ -211,7 +232,7 @@ antecedentes_formacion:
       tipo: charla
       institucion: UNSL
       año: 2017
-      resolucion: RD-3-761/17
+      resolucion_asistencia: RD-3-761/17
 
     - nombre: Ofuscación de Código y sus Aplicaciones a la Seguridad Informática
       tipo: charla
@@ -346,11 +367,21 @@ antecedentes_produccion:
 
   - publicaciones:
     - tipo: articulo
+      titulo: "UNSL at eRisk 2021: A Comparison of Three Early Alert Policies for Early Risk Detection"
+      autores: \textbf{Juan Martín Loyola}, Sergio Burdisso,  Horacio Thompson,  Leticia Cagnina,  Marcelo Luis Errecalde
+      revista: Working Notes of the Conference and Labs of the Evaluation Forum (CLEF), Bucarest, Romania
+      link_paper: "http://ceur-ws.org/Vol-2936/paper-81.pdf"
+      link_codigo: "https://github.com/jmloyola/unsl_erisk_2021"
+      fecha: 2021
+
+    - tipo: articulo
       titulo: "Classification of RNA backbone conformations into rotamers using 13C' chemical shifts: exploring how far we can go"
       autores: Alejandro A Icazatti, \textbf{Juan Martín Loyola}, Igal Szleifer, Jorge A Vila, Osvaldo A Martin
       revista: PeerJ
       fecha: 2019
       DOI: 10.7717/peerj.7904
+      link_paper: "https://peerj.com/articles/7904/"
+      link_codigo: "https://github.com/BIOS-IMASL/RNA_13C_ChemicalShifts_Databases"
 
     - tipo: articulo
       titulo: Learning When to Classify for Early Text Classification
@@ -358,6 +389,8 @@ antecedentes_produccion:
       revista: Computer Science – CACIC 2017. 23rd Argentine Congress, La Plata, Argentina, Revised Selected Papers, pp. 24-34. CACIC 2017. Communications in Computer and Information Science, vol 790
       ISBN: 978-3-319-75214-3
       DOI: 10.1007/978-3-319-75214-3\_3
+      link_paper: "https://doi.org/10.1007/978-3-319-75214-3_3"
+      link_codigo: "https://github.com/jmloyola/early-classification"
 
   - trabajos_tesis:
     - tipo: Tesina de licenciatura
@@ -449,13 +482,22 @@ antecedentes_extension:
 otros_antecedentes:
   - titulo: ANTECEDENTES LABORALES
     antecedentes:
-    - detalle: Participación en el programa ``Google Summer of Code 2019'' bajo la organización NumFOCUS con el proyecto ``\href{https://summerofcode.withgoogle.com/projects/4666396833742848}{Bayesian Additive Regression Trees in PyMC3}''
     - detalle: Ingeniero de Software en Mercado Libre, integrante del equipo de prevención de fraude, desde el 4 enero de 2016 hasta el 6 marzo de 2017
 
   - titulo: PREMIOS Y DISTINCIONES
     antecedentes:
     - detalle: "Segundo escolta de la bandera de ceremonia en representación de la FCFMyN de la UNSL hasta mayo de 2016. Resolución de designación: RD-3-279/15"
     - detalle: Abanderado del nivel secundario del colegio María Auxiliadora, San Luis, Argentina, 2009
+
+  - titulo: CONTRIBUCIONES DE CÓDIGO A LIBRERÍAS DE COMPUTACIÓN CIENTÍFICA
+    antecedentes:
+    - detalle: Participación en el programa ``Google Summer of Code 2019'' bajo la organización NumFOCUS con el proyecto ``\href{https://summerofcode.withgoogle.com/projects/4666396833742848}{Bayesian Additive Regression Trees in PyMC3}''
+    - detalle: Contribuciones de código a la librería de aprendizaje automático en Python \href{https://github.com/scikit-learn/scikit-learn/commits?author=jmloyola}{scikit-learn}
+    - detalle: Contribuciones de código a la librería de programción probabilística \href{https://github.com/pymc-devs/pymc3/commits?author=jmloyola}{PyMC3}
+
+  - titulo: IDIOMAS
+    antecedentes:
+    - detalle: Inglés nivel avanzado
 
 #  - titulo: CONOCIMIENTOS ESPECÍFICOS RELATIVOS AL LLAMADO DEL PRESENTE CONCURSO
 #    antecedentes:

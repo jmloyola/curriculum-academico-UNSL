@@ -174,9 +174,10 @@
       ~{ for item in subseccion.publicaciones }~
         % The symbol '-' eats leading / trailing whitespace, for example used with the if statement it does not generate new lines.
         ~{ if item.tipo == "articulo" }~
-          \item ~{{ item.autores }}~, ``~{{ item.titulo }}~'', en ~{{ item.revista }}~ ~{- if item.fecha }~, ~{{ item.fecha }}~ ~{ endif }~.
+          \item ~{{ item.autores }}~, ~{- if item.link_paper }~ \href{~{{ item.link_paper }}~}{``~{{ item.titulo }}~''} ~{ else }~ ``~{{ item.titulo }}~'' ~{ endif }~, en ~{{ item.revista }}~ ~{- if item.fecha }~, ~{{ item.fecha }}~ ~{ endif }~.
                 ~{- if item.ISBN }~ ISBN: ~{{ item.ISBN }}~. ~{ endif }~
                 ~{- if item.DOI }~ DOI: ~{{ item.DOI }}~. ~{ endif }~
+                ~{- if item.link_codigo }~ \href{~{{ item.link_codigo }}~}{[código fuente]} ~{ endif }~
           \espacioEntreItems{}
 
         ~{ elif item.tipo == "preprints" }~
