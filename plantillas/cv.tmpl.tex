@@ -36,12 +36,17 @@
 \usepackage{hyphenat}\hyphenation{Mathematica}
 \renewcommand{\familydefault}{lmss}
 
-\begin{document}
-
 %main color
 \definecolor{maincolor}{RGB}{118,13,112}
 %light grey for HR-appreciated
 \definecolor{maingrey}{RGB}{150,150,150}
+
+\hypersetup{%
+    colorlinks    = true,%  Color text instead of boxes
+    urlcolor      = maincolor,%  Color of external urls
+}
+
+\begin{document}
 
 \begin{center}
 \huge\bf\color{maingrey} Curriculum Vitae \\
