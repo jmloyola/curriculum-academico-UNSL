@@ -9,6 +9,10 @@ Los campos válidos para completar el currículum académico son los que se encu
 * MikTeX o cualquier otro procesador de LaTeX (se supone que los paquetes LaTeX están ahí o que MikTeX los instala al vuelo durante la compilación por primera vez),
 * Jinja2.
 
+En caso de utilizar Conda para administrar los ambientes de Python, se puede
+utilizar el comando `conda env create -f environment.yml` para crear el
+ambiente con todos los paquetes necesarios.
+
 ## Cómo usarlo
 
 Edita el archivo `cv.yaml` con tu información (lee las pautas en el encabezado), luego ejecuta el comando `make` en la consola. Esto generará un currículum académico en la carpeta `resultado`.

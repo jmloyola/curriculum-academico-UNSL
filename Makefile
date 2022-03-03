@@ -26,7 +26,7 @@ $(PDF): $(TEX)
 	latexmk -c -cd $(RESULT_DIR)/cv
 
 viewpdf: $(PDF)
-	evince $(PDF)
+	atril $(PDF)
 
 clean:
 	rm -rf $(RESULT_DIR)/*
