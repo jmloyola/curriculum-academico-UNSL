@@ -219,7 +219,7 @@
               ~{ elif item.tipo_participacion == "participacion" }~ Participación en ~{{ item.tipo_evento }}~ ~{ endif -}~
               ``~{{ item.nombre_evento }}~'', ~{{ item.institucion }}~, ~{{ item.lugar }}~, ~{{ item.fecha }}~.
               ~{- if item.tipo_trabajo -}~
-                ~{ if item.tipo_trabajo == "articulo" }~ Autor del artículo ``~{{ item.titulo_trabajo }}~'', ~{{ item.autores }}~.
+                ~{ if item.tipo_trabajo == "articulo" }~ Autor del artículo ~{- if item.link_paper }~ \href{~{{ item.link_paper }}~}{``~{{ item.titulo_trabajo }}~''} ~{ else }~ ``~{{ item.titulo_trabajo }}~'' ~{- endif -}~, ~{{ item.autores }}~.
                 ~{ elif item.tipo_trabajo == "presentacion_oral" }~ Defensa oral del trabajo ``~{{ item.titulo_trabajo }}~''.
                 ~{ elif item.tipo_trabajo == "charla" }~ Presentación de la charla ``~{{ item.titulo_trabajo }}~''.
                 ~{ elif item.tipo_trabajo == "poster" }~ Autor del poster ``~{{ item.titulo_trabajo }}~''. ~{- endif -}~

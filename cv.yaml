@@ -367,8 +367,30 @@ antecedentes_produccion:
 
   - publicaciones:
     - tipo: articulo
+      titulo: "UNSL at eRisk 2022: Decision policies with history for early classification"
+      autores: \textbf{Juan Martín Loyola}, Horacio Thompson, Sergio Burdisso, Marcelo Luis Errecalde
+      revista: Working Notes of the Conference and Labs of the Evaluation Forum (CLEF), Bologna, Italy
+      link_codigo: "https://github.com/jmloyola/unsl_erisk_2022"
+      fecha: 2022
+
+    - tipo: articulo
+      titulo: "Bayesian additive regression trees for probabilistic programming"
+      autores: Miriana Quiroga, Pablo G Garay, Juan M Alonso, \textbf{Juan Martín Loyola}, Osvaldo A Martin
+      revista: arXiv preprint arXiv:2206.03619
+      link_paper: "https://arxiv.org/abs/2206.03619"
+      link_codigo: "https://github.com/aloctavodia/BART"
+      fecha: 2022
+
+    - tipo: articulo
+      titulo: "Solubility of meloxicam in ethylene glycol-water and propylene glycol-ethanol mixtures: Experimental determination and thermodynamic analysis"
+      autores: Gabriela Castro, \textbf{Juan Martín Loyola}, Estela Gasull, María Cristina Almandoz
+      revista: Journal of Molecular Liquids
+      link_paper: "https://www.sciencedirect.com/science/article/abs/pii/S0167732222004019#!"
+      fecha: 2022
+
+    - tipo: articulo
       titulo: "UNSL at eRisk 2021: A Comparison of Three Early Alert Policies for Early Risk Detection"
-      autores: \textbf{Juan Martín Loyola}, Sergio Burdisso,  Horacio Thompson,  Leticia Cagnina,  Marcelo Luis Errecalde
+      autores: \textbf{Juan Martín Loyola}, Sergio Burdisso, Horacio Thompson, Leticia Cagnina, Marcelo Luis Errecalde
       revista: Working Notes of the Conference and Labs of the Evaluation Forum (CLEF), Bucarest, Romania
       link_paper: "http://ceur-ws.org/Vol-2936/paper-81.pdf"
       link_codigo: "https://github.com/jmloyola/unsl_erisk_2021"
@@ -400,6 +422,40 @@ antecedentes_produccion:
       resolucion: RD-3-110/17
       
   - eventos_cientificos:
+    - nombre_evento: XXIV Workshop de Investigadores en Ciencias de la Computación
+      tipo_participacion: participacion
+      institucion: Universidad Champagnat
+      lugar: Mendoza, Mendoza, Argentina
+      fecha: 28 y 29 de abril de 2022
+      titulo_trabajo: Detección Anticipada de Riesgos en la Web
+      tipo_trabajo: articulo
+      autores: Leticia Cagnina, María Paula Villegas, M. José Garcíarena Ucelay, \textbf{Juan Martín Loyola}, Sergio Burdisso, Darío Funez, Horario Thompson, Marcelo Errecalde
+
+    - nombre_evento: Encuentro de Cooperación en Postgrado del Consorcio de Cloud Computing, Big Data \& Emerging Topics
+      tipo_participacion: participacion
+      institucion: Universidad Nacional de La Plata
+      lugar: La Plata, Buenos Aires, Argentina
+      fecha: noviembre del 2021
+      titulo_trabajo: Aprendizaje automático para clasificación anticipada en datos secuenciales
+      tipo_trabajo: articulo
+      link_paper: http://sedici.unlp.edu.ar/handle/10915/129863
+      autores: \textbf{Juan Martín Loyola}
+
+    - nombre_evento: "Jornadas sobre NLP (Algoritmos que ``entienden'' el lenguaje: Aspectos computacionales y aplicaciones sociales)"
+      tipo_participacion: participacion
+      institucion: Universidad Nacional de Lujan
+      lugar: Lujan, Buenos Aires, Argentina
+      fecha: 17 de agosto de 2021
+      titulo_trabajo: Modelos para la detección anticipada de riesgos en flujos de datos
+      tipo_trabajo: charla
+
+    - nombre_evento: Mexican NLP Summer School
+      tipo_evento: escuela
+      tipo_participacion: asistencia
+      institucion: Asociación Mexicana para el Procesamiento de Lenguaje Natural
+      lugar: Virtual
+      fecha: 2 al 4 de junio de 2021
+
     - nombre_evento: Taller Argentino de Computación Científica
       tipo_participacion: participacion
       institucion: UNSL
@@ -491,9 +547,10 @@ otros_antecedentes:
 
   - titulo: CONTRIBUCIONES DE CÓDIGO A LIBRERÍAS DE COMPUTACIÓN CIENTÍFICA
     antecedentes:
+    - detalle: Parte del equipo \href{https://github.com/orgs/scikit-learn/teams/contributor-experience-team/members}{``Contributor Experience Team'' en Scikit-learn}
     - detalle: Participación en el programa ``Google Summer of Code 2019'' bajo la organización NumFOCUS con el proyecto ``\href{https://summerofcode.withgoogle.com/projects/4666396833742848}{Bayesian Additive Regression Trees in PyMC3}''
-    - detalle: Contribuciones de código a la librería de aprendizaje automático en Python \href{https://github.com/scikit-learn/scikit-learn/commits?author=jmloyola}{scikit-learn}
-    - detalle: Contribuciones de código a la librería de programción probabilística \href{https://github.com/pymc-devs/pymc3/commits?author=jmloyola}{PyMC3}
+    - detalle: Contribuciones de código a la librería de aprendizaje automático en Python \href{https://github.com/scikit-learn/scikit-learn/commits?author=jmloyola}{Scikit-learn}
+    - detalle: Contribuciones de código a la librería de programción probabilística \href{https://github.com/pymc-devs/pymc/commits?author=jmloyola}{PyMC}
 
   - titulo: IDIOMAS
     antecedentes:
