@@ -14,13 +14,13 @@
 #     > [datos_personales] DATOS PERSONALES
 #     > [antecedentes_formacion] A) ANTECEDENTES SOBRE LA FORMACIÓN
 #         1. [titulos_universitarios] Títulos universitarios, con mención de la Facultad y universidad que los otorgó.
-#         2. [cursos_post_grado] Cursos categorizados como de posgrado, aprobados, consignando horas de duración, tipo de evaluación y año de cursado.
+#         2. [cursos_postgrado] Cursos categorizados como de posgrado, aprobados, consignando horas de duración, tipo de evaluación y año de cursado.
 #         3. [otros_cursos] Otros cursos aprobados, a través de distintas modalidades (seminarios, talleres, etc.), consignando horas de duración, tipo de evaluación y año de cursado.
 #         4. [becas_obtenidas] Becas ganadas, institución que la otoró, objeto de la misma y período en que fue becado.
 #         5. [pasantias] Pasantías realizadas, indicando institución en que la realizó, tema y objeto de la misma, duración y año.
 #     > [antecedentes_docente] B) ANTECEDENTES DOCENTES Y DE FORMACIÓN DE RECURSOS HUMANOS
 #         1. [cargos_docentes] Cargos que desempeño o desempeña en la actividad docente nacional, provincial o privada, indicando la institución, el período de ejercicio, la naturaleza de la designación, la forma de acceso al mismo y la índole de las tareas desarrolladas. En caso de existir calificación por el desempeño, deberá consignársela.
-#         2. [dictado_cursos_post_grado] Cursos categorizados como de postgrado dictados, indicando categoría, función cumplida en el mismo, duración, año de dictado y lugar de desarrollo.
+#         2. [dictado_cursos_postgrado] Cursos categorizados como de postgrado dictados, indicando categoría, función cumplida en el mismo, duración, año de dictado y lugar de desarrollo.
 #         3. [dictado_otros_cursos] Otros cursos de capacitación, indicando función cumplida en el mismo, duración, año de dictado y lugar de desarrollo.
 #         4. [documentos_elaborados] Documentos didácticos originales elaborados. Si hay más de un autor, inficar la participación que les cupo en los mismos.
 #         5. [montaje_cursos] Montaje de asignaturas y de cursos de capacitación en general o posgrado. Se entiendo por "montaje" a la tarea de programación de una asignatura o curso no desarrollado proviamente.
@@ -96,7 +96,7 @@ antecedentes_formacion:
       promedio: 8,49
       resolución_egreso: RD-3-319/15
 
-  - cursos_post_grado:
+  - cursos_postgrado:
     - nombre: Minería de Textos
       institucion: UNSL
       creditos: 60 horas
@@ -341,6 +341,14 @@ antecedentes_docente:
       fecha: desde 2019 a la fecha
       resolucion_llamado: RCD-3-183/18
       resolucion_orden_merito: RCD-3-39/19
+
+  - dictado_cursos_postgrado:
+    - cargo: Auxiliar
+      nombre: "Estadística: Análisis Exploratorio de Datos"
+      duracion: 60 horas
+      año: 2022
+      institucion: UNSL
+      resolucion_protocolizacion: RR-2-1774/22
 
 antecedentes_produccion:
   - investigacion:
