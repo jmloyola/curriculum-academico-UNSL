@@ -81,7 +81,7 @@ antecedentes_formacion:
   - titulos_universitarios:
     - titulo: Doctor en Ciencias de la Computación
       universidad: FCFMyN, UNSL
-      egreso_estimado: 2022
+      egreso_estimado: Mayo 2023
       resolución_admision: RD-3-636/18
 
     - titulo: Licenciado en Ciencias de la Computación
@@ -206,7 +206,7 @@ antecedentes_formacion:
     - nombre: Inglés
       tipo: curso
       institucion: Instituto William Shakespeare de San Luis
-      año: 2003-2005, 2007-2010 y 2020
+      año: 2003--2005, 2007--2010 y 2020
       tipo_certificacion: aprobacion
 
     - nombre: Introducción a la Ciencia de Datos
@@ -328,7 +328,7 @@ antecedentes_formacion:
 
   - becas_obtenidas:
     - beca: Beca para asistir a la escuela ``Machine Learning Summer School'', Fundación Sadosky, 2018.
-    - beca: Beca de doctorado ``Beca Interna Doctoral en el marco de Proyectos de Investigación de Unidades Ejecutoras'', CONICET, abril 2017 hasta marzo 2022.
+    - beca: Beca de doctorado ``Beca Interna Doctoral en el marco de Proyectos de Investigación de Unidades Ejecutoras'', CONICET, abril 2017 hasta marzo 2023.
     - beca: "Beca de finalización de carrera ``Becas de Fin de Carrera para Estudiantes de Grado en Carreras TICs 2011'', Agencia Nacional de Promoción Científica y Tecnológica (ANPCYT) del Ministerio de Ciencia, Tecnología e Innovación Productiva de la Nación (MINCYT), 2014. Resolución de designación: 1843/14."
     - beca: Beca para asistir a la ``Escuela de Ciencias Informáticas 2014'', UBA, 2014.
 
@@ -378,6 +378,7 @@ antecedentes_produccion:
       titulo: "UNSL at eRisk 2022: Decision policies with history for early classification"
       autores: \textbf{Juan Martín Loyola}, Horacio Thompson, Sergio Burdisso, Marcelo Luis Errecalde
       revista: Working Notes of the Conference and Labs of the Evaluation Forum (CLEF), Bologna, Italy
+      link_paper: "https://ceur-ws.org/Vol-3180/paper-75.pdf"
       link_codigo: "https://github.com/jmloyola/unsl_erisk_2022"
       fecha: 2022
 
@@ -400,7 +401,7 @@ antecedentes_produccion:
       titulo: "UNSL at eRisk 2021: A Comparison of Three Early Alert Policies for Early Risk Detection"
       autores: \textbf{Juan Martín Loyola}, Sergio Burdisso, Horacio Thompson, Leticia Cagnina, Marcelo Luis Errecalde
       revista: Working Notes of the Conference and Labs of the Evaluation Forum (CLEF), Bucarest, Romania
-      link_paper: "http://ceur-ws.org/Vol-2936/paper-81.pdf"
+      link_paper: "https://ceur-ws.org/Vol-2936/paper-81.pdf"
       link_codigo: "https://github.com/jmloyola/unsl_erisk_2021"
       fecha: 2021
 
@@ -541,7 +542,7 @@ antecedentes_produccion:
 antecedentes_extension:
   - actividades_comunidad:
     - detalle: Participación de las jornadas ``IMASL Abre sus Puertas'', destinada para alumnos de nivel secundario, con el objetivo de difundir las actividades que desarrollan los Proyectos de Investigación del Instituto de Matemática Aplicada San Luis, entre abril y octubre de 2018
-    - detalle: Co-organizador de los encuentros de la \href{https://www.meetup.com/es/PyData-San-Luis/members/?op=leaders}{PyData San Luis}
+    - detalle: Co-organizador de los encuentros de la \href{https://www.meetup.com/es/PyData-San-Luis/}{PyData San Luis} desde 2018 a 2022
 
 otros_antecedentes:
   - titulo: ANTECEDENTES LABORALES
