@@ -80,20 +80,21 @@ datos_personales:
 antecedentes_formacion:
   - titulos_universitarios:
     - titulo: Doctor en Ciencias de la Computación
-      universidad: FCFMyN, UNSL
-      egreso_estimado: Mayo 2023
-      resolución_admision: RD-3-636/18
+      universidad: Facultad de Ciencias Físico Matemáticas y Naturales (FCFMyN), Universidad Nacional de San Luis (UNSL)
+      egreso: 2023
+#      resolución_admision: RD-3-636/18
+      resolución_egreso: RD-3-839/23
 
     - titulo: Licenciado en Ciencias de la Computación
       universidad: FCFMyN, UNSL
       egreso: 2017
-      promedio: 8,81
+#      promedio: 8,81
       resolución_egreso: RD-3-238/17
 
     - titulo: Analista Programador Universitario
-      universidad: Facultad de Ciencias Físico Matemáticas y Naturales (FCFMyN), Universidad Nacional de San Luis (UNSL)
+      universidad: FCFMyN, UNSL
       egreso: 2014
-      promedio: 8,49
+#      promedio: 8,49
       resolución_egreso: RD-3-319/15
 
   - cursos_postgrado:
@@ -338,7 +339,7 @@ antecedentes_docente:
       dedicacion: Simple
       caracter: Efectivo
       institucion: Área de Datos del Departamento de Informática, UNSL
-      fecha: desde 2019 a la fecha
+      fecha: desde 2019 a 2023
       resolucion_llamado: RCD-3-183/18
       resolucion_orden_merito: RCD-3-39/19
 
@@ -356,7 +357,7 @@ antecedentes_produccion:
       cargo: Integrante
       institucion: UNSL
       codigo: PROICO 03-0620
-      fecha: desde 2020 a la fecha
+      fecha: desde 2020 a 2023
       resolucion: RCS-1-138/20
 
     - proyecto: Aprendizaje automático y toma de decisiones en sistemas inteligentes para la web
@@ -547,6 +548,7 @@ antecedentes_extension:
 otros_antecedentes:
   - titulo: ANTECEDENTES LABORALES
     antecedentes:
+    - detalle: Machine Learning Engineer en ICBC, desde el 1 junio de 2023 a la fecha
     - detalle: Ingeniero de Software en Mercado Libre, integrante del equipo de prevención de fraude, desde el 4 enero de 2016 hasta el 6 marzo de 2017
 
   - titulo: PREMIOS Y DISTINCIONES
